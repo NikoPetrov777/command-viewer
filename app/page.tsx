@@ -10,17 +10,13 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   return (
-  <div className="flex flex-col min-h-screen bg-slate-900 p-8">
-  <div className="mx-auto max-w-4xl space-y-8 flex-grow">
-    <div className="text-center">
-      <h1 className="mb-4 text-3xl font-bold text-white">Command Reference</h1>
-      <p className="text-slate-400">Select a category to view common commands</p>
-    </div>
-  </div>
-  <footer className="text-center text-slate-400 mt-auto">
-    Created by Nikolay Petrov
-  </footer>
-</div>
+   <div className="min-h-screen bg-slate-900 p-8">
+      <div className="mx-auto max-w-4xl space-y-8">
+        <div className="text-center">
+          <h1 className="mb-4 text-3xl font-bold text-white">Command Reference</h1>
+          <p className="text-slate-400">Select a category to view common commands</p>
+          <p className="text-slate-400">Created by Nikolay Petrov</p>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-4">
           <Button
