@@ -25,6 +25,7 @@ find /var/vols/xxx -type f -exec grep -l "search_term" {} + - Find all files con
 ps -aux - List all running processes.
 ps -wef | grep <process_name> - Search for a process by name.
 jstack <PID> - Check logs for a high-usage Java process.
+kill <process PID> - Kill process by PID number
 pkill -9 <process_name> - Force terminate a process.
 top - Display system processes and their resource usage.
 htop - Interactive process viewer.
