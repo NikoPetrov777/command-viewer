@@ -102,7 +102,7 @@ kubectl top pods -A - Displays the current memory usage of pods.
 kubectl describe pod -n <namespace> <podname> - Describes details of a pod.
 kubectl logs -n <namespace> <podname> - Displays logs for all containers in a pod.
 kubectl logs -n <namespace> <podname> -c <containername> - Displays logs for a specific container in a pod.
-kubectl exec -ti -n <namespace> <podname> -c <containername> -- /bin/bash - Executes commands inside a pod's container.
+kubectl exec -ti -n <namespace> <podname> -c <containername> /bin/bash - Executes commands inside a pod's container.
 watch 'kubectl get pods -A | grep -v 1/1 | grep -v 2/2 | grep -v 3/3 | grep -v 4/4' - Watch pods that are not up and running in real-time.
 kubectl delete pods --all -n <namespace> --grace-period=0 --force - Force delete all pods in a namespace.
 kubectl get pods -n <namespace> | grep Error | awk '{print $1}' | xargs kubectl delete pod -n <namespace> - Delete all pods in an error state.
