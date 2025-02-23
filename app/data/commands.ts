@@ -10,6 +10,8 @@ touch <file_name> - Create an empty file.
 rm <file> - Remove files or directories.
 cp <source> <destination> - Copy files and directories.
 mv <source> <destination> - Move or rename files and directories.
+chmod <octal code> - Changes the permissions of a file/directory
+chown <user>:<group> - Changes the ownership of a file/directoru
 
 ## Searching and Filtering
 grep <pattern> <file> - Search for a pattern in a file.
